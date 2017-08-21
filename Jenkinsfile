@@ -10,6 +10,7 @@ pipeline {
           },
           "PreCheck1": {
             sh 'whoami'
+            writeFile(file: 'file1', text: 'this is file-1', encoding: 'utf-8')
             
           },
           "PreCheck2": {
