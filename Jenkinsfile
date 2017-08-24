@@ -80,6 +80,7 @@ pipeline {
       steps {
         echo 'ReadyToGo'
         input(message: 'Ready to Go Production?', submitter: 'admin', submitterParameter: 'isReady=true')
+        echo 'Done'
       }
     }
   }
